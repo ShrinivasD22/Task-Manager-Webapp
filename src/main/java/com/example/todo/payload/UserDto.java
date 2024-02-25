@@ -12,13 +12,13 @@ import lombok.Setter;
 public class UserDto {
 
 	private Long id;
-	private String username;
+	private String name;
 	
 	@NotBlank
-	@Size(min=3,max=10,message="Password must be min of 3 chars and max of 10 chars!!!")
+	private String email;
+	@Size(min=6,max=10,message="Password must be min of 6 chars and max of 10 chars!!!")
 	private String password;
-	private String firstName;
-	private String lastName;
+	private String confirmpassword;
 	
 	
 }
